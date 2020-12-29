@@ -1,0 +1,392 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  background: #f6f6f6;
+}
+
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p
+, blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del, dfn, em,
+img, ins, kbd, q, s, samp, small, strike, strong,
+sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol,
+ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, .head-wrp, output, ruby,
+section, summary, time, mark,
+audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+header {
+  background: #ededed;
+}
+
+.Wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.Wrapper .R1 {
+  width: 28%;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  padding: .6rem 1.6rem .2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.Wrapper .R1::after {
+  content: '';
+  width: 1px;
+  height: 62px;
+  background: #dadada;
+  position: absolute;
+  right: -14px;
+  top: -5px;
+}
+
+.Wrapper .R1 .rchild {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 35%;
+}
+
+.Wrapper .R1 .logo {
+  width: 15%;
+}
+
+.Wrapper .R1 .logo img {
+  max-width: 80%;
+  border-radius: 50%;
+}
+
+.Wrapper path {
+  fill: #919191;
+}
+
+.Wrapper .status, .Wrapper .Menu, .Wrapper .Menusetting {
+  cursor: pointer;
+}
+
+.maincontent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.maincontent .LeftSide {
+  width: 30%;
+  border-right: 1px solid #dadada;
+}
+
+.maincontent .LeftSide .MainWrp {
+  width: 100%;
+}
+
+.maincontent .LeftSide .MainWrp .head {
+  padding: 0 1rem 0 0;
+}
+
+.maincontent .LeftSide .MainWrp .head input[type="text"] {
+  width: 100%;
+  padding: 0.7rem 0 .7rem 3.4rem;
+  margin: .5rem 0rem .5rem 0rem;
+  border-radius: 50px;
+  border: none;
+  background: #ffffff;
+  outline: none;
+  color: #acacac;
+}
+
+.maincontent .LeftSide .btnwrp .cmn2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.maincontent .LeftSide .btnwrp .cmn2 .imgwrp {
+  width: 62px;
+  margin-right: 12px;
+}
+
+.maincontent .LeftSide .btnwrp .cmn2 img {
+  width: 100%;
+  height: 59px;
+  border-radius: 50%;
+}
+
+.maincontent .LeftSide .btnwrp .content {
+  width: 85%;
+}
+
+.maincontent .LeftSide .btnwrp {
+  height: 522px;
+  width: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.maincontent .LeftSide .btnwrp a {
+  text-decoration: none;
+  background: #ebebeb;
+  margin: 0rem 0 .5rem;
+  padding: 10px 0 10px 1.3rem;
+  display: block;
+  color: #424242;
+}
+
+.maincontent .RightSide {
+  width: 70%;
+  background: #e5ddd5;
+  position: relative;
+}
+
+.maincontent .RightSide .chat_bg {
+  background: url(../image/chat-bg.png);
+  background-repeat: repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  height: 576px;
+  opacity: 0.08;
+}
+
+.maincontent .RightSide .Rmain {
+  position: absolute;
+  top: 65px;
+  right: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 0 1rem;
+}
+
+.maincontent .RightSide .R2 {
+  width: 100%;
+  top: -63px;
+  position: absolute;
+  right: 0;
+  padding: .6rem .2rem;
+}
+
+.maincontent .RightSide .R2 .R2child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 1.2rem;
+}
+
+.maincontent .RightSide .R2 .R2child .f1, .maincontent .RightSide .R2 .R2child .f2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+}
+
+.maincontent .RightSide .R2 .R2child figure {
+  width: 50px;
+  height: 50px;
+}
+
+.maincontent .RightSide .R2 .R2child figure img {
+  height: 50px;
+  width: 51px;
+  border-radius: 50%;
+}
+
+.maincontent .RightSide .R2 .R2child .name {
+  width: 84%;
+}
+
+.maincontent .RightSide .R2 .R2child .name h2, .maincontent .RightSide .R2 .R2child .name h5 {
+  color: #424242;
+}
+
+.maincontent .RightSide .R2 .R2child .name h5 {
+  font-size: .8rem;
+  color: #797979;
+}
+
+.maincontent .RightSide .R2 .R2child .f2 {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.maincontent .RightSide .R2 .R2child .f2 .searchbar {
+  margin: 0 1.4rem 0 0;
+}
+
+.maincontent .RightSide .R2 .R2child .f2 .searchicon, .maincontent .RightSide .R2 .R2child .f2 .profileSetting {
+  cursor: pointer;
+}
+
+#Categories1 {
+  position: absolute;
+  background: #ffffff;
+  padding: 0  0rem;
+  width: 230px;
+  top: 65px;
+  right: 54px;
+  z-index: 11;
+  border-radius: 5px;
+  -webkit-animation: animatezoom .5s;
+          animation: animatezoom .5s;
+  -webkit-box-shadow: 0 4px 12px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px 12px 1px rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+#Categories1 ul li {
+  list-style-type: none;
+  padding: 14px 12px;
+  margin: 10px 0;
+  color: #000000;
+  text-transform: capitalize;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#Categories1 ul li:hover {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  background: #f1f1f1;
+}
+
+@-webkit-keyframes animatezoom {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cccccc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+/*# sourceMappingURL=style.css.map */
